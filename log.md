@@ -4,6 +4,9 @@
 ##### 000 - Chrome Extension 
 
 **Description**: Apprendre à développer une extension chrome remplacant le nouvel onglet. Première prise en main de VueCLI.
+**Axes d'amélioration**: 
+- Gestion de tag par todo et filtrage.
+- Gestion de couleur pour le statut (urgent: rouge, etc..)
 
 **Lien vers les travaux**: [ChromeExtension](./000-chrome-extension/)
 
@@ -11,5 +14,8 @@
 ##### 001 - Realtime chat with socket.io.
 
 **Description**: Réalisation d'une application en temps réel grâce à Socket.io, express, express-handelbars, nodejs & vueJS.
+**Axes d'amélioration**: 
+- Gestion de chat privé.
+- Améliorations CSS.
 
 **Lien vers les travaux**: [RealtimeChat](./001-realtime-chat/)

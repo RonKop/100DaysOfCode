@@ -3,8 +3,8 @@
 ## Contenu
 * [Règles](regles.md)
 * [Log - cliquez ici pour voir ma progression](log.md)
-* [FAQ](FAQ-fr.md)
-* [Ressources](resources-fr.md)
+* [FAQ](FAQ.md)
+* [Ressources](resources.md)
 
 ## Vous avez décidé de vous inscrire:
 1. Faites un tour sur [le site officiel](http://100daysofcode.com/) des #100JoursDeCode. Rejoignez les autres participants sur la plateforme de votre choix figurant dans cette liste: www.100DaysOfCode.com/connect En outre, vous trouverez [ici](https://join.slack.com/t/100xcode/shared_invite/enQtMzA2NzUyODY4MTgyLWM2NzMzYzBmZTcwOTk0MzM2YTI5OWQzM2M3ZTVjZTUyMTE0NDk3ZjdiZmExNGU5Mjg3ODgzZTQxODI3YTNjZjA) une invitation pour le canal slack 100JoursDeCode. 
