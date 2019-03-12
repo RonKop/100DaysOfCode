@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+    justify-content: center;
+}
+
+h1 {
+    font-weight: 700;
+    color: #292929;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+h1 span {
+    margin: 0 2rem;
+}
