@@ -19,3 +19,12 @@
 - Améliorations CSS.
 
 **Lien vers les travaux**: [RealtimeChat](./001-realtime-chat/)
+
+### Jour 2: 12 Mars 2019
+##### 002 - Hot reload with socket.io.
+
+**Description**: Compréhension et refonte du module live-server avec Socket.io. et expressjs + express handlebars.
+
+**Axes d'amélioration**:
+
+**Lien vers les travaux**: [HotReload](./002-hot-reload)
