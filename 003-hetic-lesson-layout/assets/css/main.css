@@ -1,55 +1,19 @@
+@charset "UTF-8";
+/* Reset CSS. */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* 
+        TRÈS utile pour débugger.
+        Je vous encourage à décommenter cette ligne et à voir de vous même.
+    */
   /* outline: 1px solid red; */
 }
 
 a {
   text-decoration: none;
   color: black;
-}
-
-a.button {
-  border-radius: .5rem;
-  padding: 1.25rem 2rem;
-  color: #4896f0;
-  font-weight: 700;
-  border: 1px solid #4896f0;
-}
-
-a.button.reverse {
-  background: #4896f0;
-  color: white;
-}
-
-a.button.reverse.arrow::after {
-  background: url("../resources/arrow.svg") no-repeat;
-}
-
-a.cta {
-  color: #4896f0;
-  font-weight: 700;
-}
-
-a.cta.arrow::after {
-  background: url("../resources/arrow-blue.svg") no-repeat;
-}
-
-a.arrow {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-a.arrow::after {
-  content: "";
-  display: inline-block;
-  height: 2rem;
-  width: 2rem;
-  background: url("../resources/arrow-blue.svg") no-repeat;
-  background-size: contain;
-  margin-left: 1rem;
 }
 
 ul {
@@ -60,6 +24,8 @@ img {
   display: block;
 }
 
+/* </ Reset CSS. */
+/* Styles généraux. */
 html {
   font-size: 62.5%;
 }
@@ -83,6 +49,8 @@ p {
   line-height: 2;
 }
 
+/* </ Styles généraux. */
+/* Components. */
 .grid {
   width: 100%;
   display: grid;
@@ -138,7 +106,54 @@ p {
   }
 }
 
+a.button {
+  /* Composant des liens. */
+  /* Contient trois variantes : button, button reverse, cta, arrow */
+  border-radius: .5rem;
+  padding: 1.25rem 2rem;
+  color: #4896f0;
+  font-weight: 700;
+  border: 1px solid #4896f0;
+}
+
+a.button.reverse {
+  background: #4896f0;
+  color: white;
+}
+
+a.button.reverse.arrow::after {
+  background: url("../resources/arrow.svg") no-repeat;
+}
+
+a.cta {
+  color: #4896f0;
+  font-weight: 700;
+}
+
+a.cta.arrow::after {
+  background: url("../resources/arrow-blue.svg") no-repeat;
+}
+
+a.arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a.arrow::after {
+  content: "";
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+  background: url("../resources/arrow-blue.svg") no-repeat;
+  background-size: contain;
+  margin-left: 1rem;
+}
+
+/* </ Components. */
+/* Nav. */
 nav {
+  /* Pour faire tenir la nav sur le haut de la page, utilisez sticky. */
   position: sticky;
   top: 0;
   left: 0;
@@ -183,6 +198,8 @@ nav ul {
   }
 }
 
+/* </ Nav. */
+/* Header. */
 header {
   display: flex;
   padding: 8rem 0;
@@ -218,6 +235,8 @@ header img {
   object-fit: contain;
 }
 
+/* </ Header. */
+/* Main. */
 main {
   margin: 8rem 0;
 }
@@ -436,6 +455,8 @@ main .developer .col-6 {
   }
 }
 
+/* </ Main. */
+/* Footer. */
 footer {
   padding: 4rem 0 0;
   background: #1d2229;
@@ -521,3 +542,5 @@ footer .footer p {
     text-align: center;
   }
 }
+
+/* </ Footer. */
