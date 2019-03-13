@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Vaud", serif;
+    src: url('../fonts/Vaud-Bold.woff2') format('woff2');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Vaud", serif;
+    src: url('../fonts/Vaud.woff2') format('woff2');
+    font-weight: 400;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Vaud", "Avenir", "Lato", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
