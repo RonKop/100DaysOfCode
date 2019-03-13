@@ -1,0 +1,523 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a.button {
+  border-radius: .5rem;
+  padding: 1.25rem 2rem;
+  color: #4896f0;
+  font-weight: 700;
+  border: 1px solid #4896f0;
+}
+
+a.button.reverse {
+  background: #4896f0;
+  color: white;
+}
+
+a.button.reverse.arrow::after {
+  background: url("../resources/arrow.svg") no-repeat;
+}
+
+a.cta {
+  color: #4896f0;
+  font-weight: 700;
+}
+
+a.cta.arrow::after {
+  background: url("../resources/arrow-blue.svg") no-repeat;
+}
+
+a.arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a.arrow::after {
+  content: "";
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+  background: url("../resources/arrow-blue.svg") no-repeat;
+  background-size: contain;
+  margin-left: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Avenir", "Lato", "Segoe UI", sans-serif;
+  color: #292929;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  line-height: 2;
+}
+
+.grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 2rem;
+}
+
+.grid [class^="col"] {
+  grid-column: span 12;
+}
+
+.grid .col-sm {
+  grid-column: span 6;
+}
+
+@media screen and (min-width: 768px) {
+  .grid .col-middle {
+    grid-column: span 6;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .grid {
+    grid-gap: 4rem;
+  }
+  .grid .col-2 {
+    grid-column: span 2;
+  }
+  .grid .col-4 {
+    grid-column: span 4;
+  }
+  .grid .col-6 {
+    grid-column: span 6;
+  }
+  .grid .col-8 {
+    grid-column: span 8;
+  }
+}
+
+.wrapper {
+  padding: 0 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    padding: 0 5rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .wrapper {
+    padding: 0 20rem;
+  }
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  height: 10rem;
+  width: 100%;
+  z-index: 100;
+  background: white;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+  box-shadow: 0 4px 20px rgba(16, 19, 20, 0.04);
+  border-bottom: 1px solid #edf1f5;
+  width: 100%;
+}
+
+@media screen and (min-width: 1280px) {
+  nav {
+    padding: 0 10rem;
+  }
+}
+
+nav img {
+  height: 30%;
+  width: auto;
+  object-fit: contain;
+}
+
+nav ul {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  nav ul {
+    display: flex;
+  }
+  nav ul li {
+    margin: 0 2rem;
+  }
+  nav ul:last-child li:last-child {
+    margin-right: 0;
+  }
+}
+
+header {
+  display: flex;
+  padding: 8rem 0;
+}
+
+header .content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 4rem;
+}
+
+header .content div {
+  margin: 4rem 0;
+}
+
+header .content div a {
+  margin-right: 2rem;
+}
+
+@media screen and (min-width: 1280px) {
+  header .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  header .content p {
+    width: 70%;
+  }
+}
+
+header img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+main {
+  margin: 8rem 0;
+}
+
+main section {
+  padding: 8rem 0;
+}
+
+main .features {
+  border-bottom: 1px solid #edf1f5;
+}
+
+main .features article {
+  margin-bottom: 6rem;
+}
+
+main .features article img {
+  height: 6rem;
+  width: 6rem;
+  object-fit: contain;
+  margin-bottom: 4rem;
+}
+
+main .features article h3 {
+  margin-bottom: 2rem;
+}
+
+main .features article p {
+  width: 100%;
+}
+
+main .features a {
+  margin-top: 6rem;
+  margin-bottom: 8rem;
+  display: block;
+  text-align: center;
+}
+
+main .payments img {
+  height: 100%;
+  margin: 0 auto;
+}
+
+main .payments h2 {
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+
+main .payments p {
+  margin-bottom: 4rem;
+}
+
+@media screen and (min-width: 1280px) {
+  main .payments .col-6:last-child {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  main .payments .col-6:last-child a {
+    display: block;
+  }
+}
+
+main .payments ul {
+  margin-bottom: 4rem;
+}
+
+main .payments ul li {
+  margin: 1.5rem 0;
+}
+
+main .payments ul li::before {
+  content: "";
+  display: inline-block;
+  padding-right: 1.5rem;
+  height: 1rem;
+  width: 1rem;
+  background: url("../resources/tick.svg") no-repeat;
+  background-size: contain;
+}
+
+main .demo {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1280px) {
+  main .demo .col-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+main .demo .title {
+  display: flex;
+  flex-direction: column;
+}
+
+main .demo .title h3 {
+  order: -1;
+  margin-bottom: 1rem;
+}
+
+main .demo .title h2 {
+  margin-bottom: 4rem;
+}
+
+main .demo ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main .demo ul li {
+  margin-right: 2rem;
+  opacity: .3;
+}
+
+@media screen and (min-width: 1280px) {
+  main .demo ul {
+    flex-direction: column;
+  }
+  main .demo ul li {
+    opacity: 1;
+    margin: 1rem 0;
+    padding-left: 1rem;
+    border-left: 3px solid #edf1f5;
+  }
+  main .demo ul li.active {
+    border-color: #4896f0;
+  }
+  main .demo ul li.active a {
+    color: #4896f0;
+  }
+}
+
+main .demo img {
+  position: relative;
+  right: -2rem;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+@media screen and (min-width: 768px) {
+  main .demo img {
+    right: -5rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  main .demo img {
+    right: -20rem;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  main .developer .wrapper {
+    position: relative;
+  }
+  main .developer .wrapper::before {
+    background: #f5f6f7;
+    height: 100%;
+    width: calc(100% - 40rem);
+    margin: 0 auto;
+    display: block;
+    content: "";
+    position: absolute;
+    left: 20rem;
+    z-index: -1;
+  }
+}
+
+main .developer img {
+  height: 100%;
+  max-height: 40rem;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 1279px) {
+  main .developer img {
+    margin: 0 auto;
+  }
+}
+
+main .developer h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+main .developer p {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+main .developer a {
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+main .developer .col-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 1280px) {
+  main .developer .col-6:last-child {
+    align-items: flex-start;
+  }
+  main .developer .col-6:last-child a {
+    margin: 0;
+    justify-content: flex-start;
+  }
+}
+
+footer {
+  padding: 4rem 0 0;
+  background: #1d2229;
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+
+footer a.button {
+  color: white;
+  border: 1px solid white;
+}
+
+footer a.button.reverse {
+  border: 1px solid #4896f0;
+}
+
+footer .get-started {
+  border-bottom: 1px solid #23272e;
+  margin-bottom: 4rem;
+}
+
+footer .get-started h2 {
+  margin-bottom: 2rem;
+}
+
+footer .get-started .col-6:last-child {
+  display: flex;
+}
+
+footer .get-started .col-6:last-child a {
+  margin-right: 2rem;
+}
+
+footer .get-started .col-6:last-child a.arrow::after {
+  background: url("../resources/arrow.svg") no-repeat;
+}
+
+@media screen and (min-width: 1280px) {
+  footer .get-started {
+    padding: 8rem 0;
+  }
+  footer .get-started .col-6:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+  }
+  footer .get-started .col-6:last-child a {
+    margin-right: 0;
+    margin-left: 2rem;
+  }
+}
+
+footer .footer .grid {
+  grid-template-columns: repeat(10, 1fr);
+}
+
+@media screen and (min-width: 1280px) {
+  footer .footer {
+    padding: 8rem 0;
+  }
+}
+
+footer .footer h3 {
+  margin-bottom: 2rem;
+}
+
+footer .footer ul li {
+  margin-bottom: .5rem;
+}
+
+footer .footer p {
+  opacity: .5;
+  margin-top: 8rem;
+  padding-bottom: 4rem;
+}
+
+@media screen and (min-width: 1280px) {
+  footer .footer p {
+    text-align: center;
+  }
+}

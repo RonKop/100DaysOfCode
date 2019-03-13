@@ -20,5 +20,6 @@ h1 {
 }
 
 h1 span {
+    color: red;
     margin: 0 2rem;
 }
