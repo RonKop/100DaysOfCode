@@ -19,7 +19,7 @@
 - Améliorations CSS.
 
 **Lien vers les travaux**: [RealtimeChat](./001-realtime-chat/)
-
+  
 ### Jour 2: 12 Mars 2019
 ##### 002 - Hot reload with socket.io.
 
@@ -28,3 +28,14 @@
 **Axes d'amélioration**:
 
 **Lien vers les travaux**: [HotReload](./002-hot-reload)
+
+### Jour 3: 13 Mars 2019
+##### 003 - SCSS, display: grid; and layout.
+
+**Description**: Reproduction du site d'opennode.co lors d'un cours avec les étudiants de Mastère Data, de Mastère Marketing et de PMD à HETIC.
+**Axes d'amélioration**:
+- Gestion des transitions.
+- Gestion des fonts.
+- Pixel perfect.
+
+**Lien vers les travaux**: [OpenNode](./003-hetic-layout)
