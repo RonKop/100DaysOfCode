@@ -39,3 +39,13 @@
 - Pixel perfect.
 
 **Lien vers les travaux**: [OpenNode](./003-hetic-layout)
+
+### Jour 4: 14 Mars 2019
+##### 004 - Playing with promises.
+
+**Description**: Travail sur les Promises et sur les fonctions async await afin de comprendre comment cela fonctionne et comme potentiellement utiliser ces méthodes.
+**Axes d'amélioration**:
+- Requête vers des API externes.
+- Requêtes imbriquées.
+
+**Lien vers les travaux**: [Playing with promises](./004-promises)
