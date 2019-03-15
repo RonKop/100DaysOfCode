@@ -25,8 +25,8 @@ const getPromise = (time = 1000) => new Promise((resolve, reject) => {
 
 const synchronous = () => {
     const promises = []
-    for (let i = 0; i < 5; i++) {
-        promises.push(getPromise(i * 500))
+    for (let i = 0; i < 1000000; i++) {
+        promises.push(getPromise(i))
     }
     promises.forEach(promise => {
         promise.then(v => logSync(`${getCurrentTime()} : ${v} `))
@@ -38,8 +38,8 @@ const synchronous = () => {
 
 const asynchronous = async () => {
     const promises = []
-    for (let i = 0; i < 5; i++) {
-        promises.push(getPromise(i * 500))
+    for (let i = 0; i < 1000000; i++) {
+        promises.push(getPromise(i))
     }
     promises.forEach(async promise => {
         logAsync(await promise)
