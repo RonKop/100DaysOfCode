@@ -1,7 +1,6 @@
 const twitterSDK = require('twitter')
 const config = require('./config.json')
 const twitterClient = new twitterSDK(config)
-const fs = require('fs')
 
 Array.prototype.cut = function (range) {
     const _temp = []
@@ -45,5 +44,6 @@ const _getFollowers = async (screenName) => {
 
 
 module.exports = {
-    getFollowers: _getFollowers
+    getFollowers: _getFollowers,
+    twitterClient
 }
