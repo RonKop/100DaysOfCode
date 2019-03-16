@@ -49,3 +49,14 @@
 - Requêtes imbriquées.
 
 **Lien vers les travaux**: [Playing with promises](./004-promises)
+
+### Jour 5 et jour 6 : 15 et 16 Mars 2019
+##### 005/006 - Playing with Twitter API.
+
+**Description**: Découverte de l'API Twitter à travers le SDK nodejs.
+Tracker des tweets comportant certains keywords et interagir avec eux au travers de l'API.
+**Axes d'amélioration**:
+- Critères de réponse.
+- Proposer une liste de réponses.
+
+**Lien vers les travaux**: [Twitter API](./005-006-twitter-api)
